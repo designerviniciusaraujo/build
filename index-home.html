@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canoas Ubatuba - Cardápio Digital</title>
+    <link rel="stylesheet" href="assets/css/app.css">  
+    <link rel="stylesheet" href="assets/components/user/user.css">  
+    <link rel="stylesheet" href="assets/components/menu/menu.css">  
+    <link rel="stylesheet" href="assets/components/search/search.css">  
+    <link rel="stylesheet" href="assets/components/categorias/categorias.css">  
+    <link rel="stylesheet" href="assets/components/product/product.css">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="user">
+        <div><i class="fa-regular fa-user"></i></div>
+        <div>
+            <span>
+                Olá <strong>Roberta</strong> Seja Bem-vindo!
+                <!-- <div class="select">Retirar no balcão <i class="fa-solid fa-arrow-down"></i></div> -->
+                <div class="select">
+                    <select>
+                      <option value="1">Selecione a forma de retirada</option>
+                      <option value="2">RETIRE NO BALCÃO</option>
+                      <option value="3">MESA</option>
+                    </select>
+                  </div>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="menu">
+        <ul>
+          
+            <button><i class="fa-regular fa-user"></i></button> 
+             <button><i class="fa-solid fa-cart-shopping"></i></button>
+            <button><i class="fa-solid fa-bars"></i></button>
+        </ul>
+    </div>
+
+
+    <div class="search">
+        <form>
+            <i class="fa-solid fa-magnifying-glass"></i> 
+            <input type="text" placeholder="Buscar itens...">
+            <i class="fa-solid fa-arrow-right"></i>
+        </form>
+        <div id="result"></div>
+     </div>
+
+    
+    <div class="categories">
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'one')">
+            <i class="fa-solid fa-burger"></i>Para Comer</button>
+          <button class="tablinks" onclick="openCity(event, 'two')">
+            <i class="fa-solid fa-martini-glass-empty"></i>Para Beber</button>
+        </div>
+        
+        <div id="one" class="tabcontent"  >
+        
+            <div class="tab sub">
+              <button class="tablinks" onclick="openCity(event, 'porcoes', 'one')">Porções</button>
+              <button class="tablinks" onclick="openCity(event, 'lanches', 'one')">Lanches</button>
+              <button class="tablinks" onclick="openCity(event, 'mais', 'one')">Mais</button>
+            </div>
+            <div id="porcoes" class="tabcontent">
+ 
+                <div class="produto">
+                    <img src="assets/images/camarao-paulista.png" alt="" s></img>
+                    <div class="prod-val">
+                        <h3 class="title-prod">Porção Camarão Paulista</h3> 
+                        <span class="valor">90,00</span>
+                    </div>
+                    <div class="quantidade">
+                        <button>+</button>
+                        <input type="text" placeholder="0">
+                        <button>-</button>
+                    </div>
+                 </div>
+            </div>
+            <div id="lanches" class="tabcontent">
+                <h3>lanches</h3> 
+                <p>Paris is the capital of France.</p> 
+            </div>
+            <div id="mais" class="tabcontent">
+                <h3>mais</h3> 
+                <p>Paris is the capital of France.</p> 
+            </div>
+        
+        </div>
+        
+        <div id="two" class="tabcontent">
+          <div class="tab sub">
+            <button class="tablinks" onclick="openCity(event, 'refri', 'two')">Refri</button>
+            <button class="tablinks" onclick="openCity(event, 'sucos', 'two')">Sucos</button>
+            <button class="tablinks" onclick="openCity(event, 'alcool', 'two')">Alcoólicos</button>
+          </div>
+          <div id="refri" class="tabcontent">
+              <h3>Refri</h3> 
+              <p>Paris is the capital of France.</p> 
+          </div>
+          <div id="sucos" class="tabcontent">
+              <h3>Sucos</h3> 
+              <p>Paris is the capital of France.</p> 
+          </div>
+          <div id="alcool" class="tabcontent">
+              <h3>Alcoólicos</h3> 
+              <p>Paris is the capital of France.</p> 
+          </div>
+        
+        
+          
+        </div>
+
+    </div>
+
+    
+    
+ <script src="assets/js/all.js"></script>
+ <script src="assets/components/categorias/categorias.js"></script>
+
+</body>
+</html>

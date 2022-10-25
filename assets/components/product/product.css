@@ -1,0 +1,53 @@
+.produto {
+    display: flex;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    padding:0  5px;
+    font-family: 'Lexend Deca', sans-serif;
+    align-items: center;
+}
+.produto img {
+    width: 80px;
+    border-radius: 5px;
+    max-height: initial;
+    height: 80px;
+    margin: 5px 0;
+}
+.prod-val{
+    padding: 10px;
+    width: 48%;
+}
+.quantidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.produto .prod-val .title-prod {
+    color: #8B9398;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.produto .prod-val .valor {
+    color: #8B9398;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.produto .quantidade button {
+    width: 18px;
+    height: 18px;
+    border: 0px;
+    border-radius: 20px;
+    color:#F8F8F8;
+    background-color: #F0B503;
+    margin: 5px;
+}
+.produto .quantidade input {
+    width: 23px;
+    height: 25px;
+    border: 0px;
+    border-radius: 9px;
+    padding-left: 16px;
+}
