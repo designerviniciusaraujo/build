@@ -42,7 +42,7 @@ background-color: #ddd;
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: transparent;
+  background-color: #fff5d6;
   border-bottom: 1px solid #F1B602;
   color: #F1B602;
   font-weight: 500;
