@@ -12,16 +12,73 @@ data = [{
             },{
                 id:'151',
                 name:'Porção Camarão Dorê', 
-                price:75,  
+                price:75, 
+
+                
             },{
                 id:'152',
                 name:'Porção Lula Dorê', 
-                price:75, 
+                price:80, 
 
             },{
                 id:'153',
-                name:'Porção Tilápia', 
+                name:'Porção Peixe Tilápia', 
                 price:65, 
+
+            },{
+                id:'154',
+                name:'Porção Peixe Cação', 
+                price:65, 
+
+            },{
+                id:'155',
+                name:'Porção Peixe Pescada', 
+                price:65, 
+
+            },{
+                id:'156',
+                name:'Porção Peixe Merluza', 
+                price:65, 
+
+            },{
+                id:'158',
+                name:'Porção Peixe Porquinho', 
+                price:65, 
+
+            },{
+                id:'159',
+                name:'Fritas', 
+                price:35, 
+
+            },{
+                id:'160',
+                name:'Fritas com Queijo', 
+                price:40, 
+
+            },{
+                id:'161',
+                name:'Porção Mandioca', 
+                price:35, 
+
+            },{
+                id:'162',
+                name:'Porção Mandioca com Queijo', 
+                price:40, 
+
+            },{
+                id:'164',
+                name:'Porção Calabresa', 
+                price:50, 
+
+            },{
+                id:'171',
+                name:'Molho Extra', 
+                price:3, 
+
+            },{
+                id:'172',
+                name:'Pão Extra', 
+                price:3, 
 
             }
         ]
@@ -29,22 +86,74 @@ data = [{
             id:'02',
             name:'Lanches',
             products:[{
-                id:'001',
-                name:'sala', 
+                id:'112',
+                name:'Hot Dog', 
+                price:18, 
             },{
-                id:'002',
-                name:'lula', 
+                id:'097',
+                name:'X Salada', 
+                price:25, 
+            },{
+                id:'110',
+                name:'X Egg', 
+                price:25, 
+            },{
+                id:'111',
+                name:'X Burguer', 
+                price:25, 
             }
         ]
         },{ 
             id:'03',
-            name:'Mais',
+            name:'Pasteis',
             products:[{
-                id:'001',
-                name:'peixe', 
+                id:'090',
+                name:'Pastel Carne ', 
+                price:13,
             },{
-                id:'002',
-                name:'lula', 
+                id:'091',
+                name:'Pastel Queijo', 
+                price:12,
+            },{
+                id:'092',
+                name:'Pastel Bauru', 
+                price:12,
+            },{
+                id:'093',
+                name:'Pastel Calabresa', 
+                price:12,
+            },{
+                id:'094',
+                name:'Pastel Frango', 
+                price:12,
+            },{
+                id:'095',
+                name:'Pastel Pizza', 
+                price:12,
+            },{
+                id:'096',
+                name:'Pastel Brócolis', 
+                price:12,
+            },{
+                id:'098',
+                name:'Pastel Carne com Queijo', 
+                price:15,
+            },{
+                id:'014',
+                name:'Pastel Brócolis com Queijo', 
+                price:12,
+            },{
+                id:'100',
+                name:'Frango com Catupiry', 
+                price:14,
+            },{
+                id:'101',
+                name:'Pastel Palmito', 
+                price:13,
+            },{
+                id:'101',
+                name:'Pastel Camarão', 
+                price:16,
             }
         ]
         }
@@ -61,9 +170,11 @@ data = [{
             products:[{
                 id:'001',
                 name:'peixe', 
+                price:75, 
             },{
                 id:'002',
                 name:'lula', 
+                price:75, 
             }]
             
         },{ 
@@ -72,9 +183,12 @@ data = [{
             products:[{
                 id:'001',
                 name:'vodka', 
+                price:75, 
             },{
                 id:'002',
                 name:'lula', 
+                price:75, 
+
             }]
         },{ 
             id:'06',
@@ -82,9 +196,13 @@ data = [{
             products:[{
                 id:'001',
                 name:'limao', 
+                price:75, 
+
             },{
                 id:'002',
                 name:'lula', 
+                price:75, 
+
             }]
         }
     
@@ -132,7 +250,7 @@ var categoriesContainer=document.getElementById('categories')
         }) 
         apiData.itens.map((tabContentMap)=>{ 
            
-            console.log(tabContentMap )       
+           
             document.getElementById(apiData.id.toString()).innerHTML+= ` 
                
                 <div id="`+tabContentMap.id +`" class="tabcontent">  
@@ -141,13 +259,12 @@ var categoriesContainer=document.getElementById('categories')
         var Contentsubs=document.getElementById(tabContentMap.id)
            
         tabContentMap.products.map((productsMap)=>{  
-                console.log(document.getElementById(apiData.id.toString()))
                 Contentsubs.innerHTML+= `  
                     <div class="produto">
                              <img src="assets/images/camarao-paulista.png" alt="" s></img>
                         <div class="prod-val">
                             <h3 class="title-prod">`+productsMap.name +`</h3> 
-                            <span class="valor">`+productsMap.price +`</span>
+                            <span class="valor">`+productsMap.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+`</span>
                         </div>
                         <div class="quantidade">
                             <button>+</button>
@@ -157,6 +274,12 @@ var categoriesContainer=document.getElementById('categories')
                     </div> 
                     </div>
                 `;
+
+
+                if(productsMap.price==undefined){
+                    console.log(productsMap )
+
+                }
    
                 }) 
         }) 
