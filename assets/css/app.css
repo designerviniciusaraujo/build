@@ -13,3 +13,9 @@ button {
 .produto {
     margin: 10px auto;
 }
+h2 {
+    padding: 0px 20px;
+    font-size: 25px;
+    width: 200px;
+    color: #F0B503;
+}

@@ -331,24 +331,24 @@ var categoriesContainer=document.getElementById('categories')
                 <div id="`+tabContentMap.id +`" class="tabcontent">  
                 </div>
             `;
-        var Contentsubs=document.getElementById(tabContentMap.id)
+            var Contentsubs=document.getElementById(tabContentMap.id)
            
-        tabContentMap.products.map((productsMap)=>{  
-                Contentsubs.innerHTML+= `  
-                    <div class="produto">
-                             <img src="assets/images/camarao-paulista.png" alt="" s></img>
-                        <div class="prod-val">
-                            <h3 class="title-prod">`+productsMap.name +`</h3> 
-                            <span class="valor">`+productsMap.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+`</span>
+            tabContentMap.products.map((productsMap)=>{  
+                    Contentsubs.innerHTML+= `  
+                        <div class="produto">
+                                <img src="assets/images/camarao-paulista.png" alt="" s></img>
+                            <div class="prod-val">
+                                <h3 class="title-prod">`+productsMap.name +`</h3> 
+                                <span class="valor">`+productsMap.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+`</span>
+                            </div>
+                            <div class="quantidade">
+                                <button>+</button>
+                                <input type="text" placeholder="0">
+                                <button>-</button>
+                            </div>
+                        </div> 
                         </div>
-                        <div class="quantidade">
-                            <button>+</button>
-                            <input type="text" placeholder="0">
-                            <button>-</button>
-                        </div>
-                    </div> 
-                    </div>
-                `;
+                    `;
 
 
                 if(productsMap.price==undefined){

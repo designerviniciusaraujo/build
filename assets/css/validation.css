@@ -9,6 +9,7 @@
     width: 100%;
     color:white;
     padding:0px;
+    z-index: 999;
 }
 
 .validation  span.number {
@@ -54,7 +55,7 @@
     bottom: 50px;
     left: 20px;
 }
-.validation form button {
+.validation   button {
     width: 150px;
     margin: 10px auto;
     display: block;

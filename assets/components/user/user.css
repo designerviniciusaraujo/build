@@ -1,5 +1,5 @@
 .user {
-    display: flex;
+  
     font-family: 'Lexend Deca', sans-serif;
     color: #8B9398;
     padding: 10px 20px;
@@ -72,6 +72,8 @@ select {
   }
   .user  .select::after {
     padding:3px;
+    right: 10px;
+    top: 11px;
   }
   /* Transition */
   .select:hover::after {
