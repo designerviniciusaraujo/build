@@ -181,13 +181,68 @@ data = [{
             id:'05',
             name:'Alcoolicas',
             products:[{
-                id:'001',
-                name:'vodka', 
-                price:75, 
+                id:'130',
+                name:'Cerveja Pilsen Lata', 
+                price:6, 
             },{
-                id:'002',
-                name:'lula', 
-                price:75, 
+                id:'131',
+                name:'Cerveja Malte Lata', 
+                price:7, 
+
+            },{
+                id:'132',
+                name:'Cerveja Haineken Lata', 
+                price:10, 
+
+            },{
+                id:'133',
+                name:'Cerveja Haineken Long Neck', 
+                price:12, 
+
+            },{
+                id:'134',
+                name:'Cerveja Stella Long Neck', 
+                price:10, 
+
+            },{
+                id:'135',
+                name:'Cerveja Haineken sem alcool Long Neck ', 
+                price:10, 
+
+            },{
+                id:'136',
+                name:'Cerveja Haineken sem alcool Lata', 
+                price:10, 
+
+            },{
+                id:'140',
+                name:'Caipirinha Pinga', 
+                price:20, 
+
+            },{
+                id:'141',
+                name:'Caipirinha Vodka Orloff', 
+                price:23, 
+
+            },{
+                id:'142',
+                name:'Caipirinha Vodka Smirnoff', 
+                price:10, 
+
+            },{
+                id:'143',
+                name:'Caipirinha Rum', 
+                price:25, 
+
+            },{
+                id:'145',
+                name:'Caipirinha Cachaça artesanal', 
+                price:23, 
+
+            },{
+                id:'142',
+                name:'Caipirinha Vodka Smirnoff', 
+                price:10, 
 
             }]
         },{ 
