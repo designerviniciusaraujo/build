@@ -55,77 +55,12 @@
      </div>
 
     
-    <div class="categories">
-
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'one')">
-            <i class="fa-solid fa-burger"></i>Para Comer</button>
-          <button class="tablinks" onclick="openCity(event, 'two')">
-            <i class="fa-solid fa-martini-glass-empty"></i>Para Beber</button>
-        </div>
-        
-        <div id="one" class="tabcontent"  >
-        
-            <div class="tab sub">
-              <button class="tablinks" onclick="openCity(event, 'porcoes', 'one')">Porções</button>
-              <button class="tablinks" onclick="openCity(event, 'lanches', 'one')">Lanches</button>
-              <button class="tablinks" onclick="openCity(event, 'mais', 'one')">Mais</button>
-            </div>
-            <div id="porcoes" class="tabcontent">
- 
-                <div class="produto">
-                    <img src="assets/images/camarao-paulista.png" alt="" s></img>
-                    <div class="prod-val">
-                        <h3 class="title-prod">Porção Camarão Paulista</h3> 
-                        <span class="valor">90,00</span>
-                    </div>
-                    <div class="quantidade">
-                        <button>+</button>
-                        <input type="text" placeholder="0">
-                        <button>-</button>
-                    </div>
-                 </div>
-            </div>
-            <div id="lanches" class="tabcontent">
-                <h3>lanches</h3> 
-                <p>Paris is the capital of France.</p> 
-            </div>
-            <div id="mais" class="tabcontent">
-                <h3>mais</h3> 
-                <p>Paris is the capital of France.</p> 
-            </div>
-        
-        </div>
-        
-        <div id="two" class="tabcontent">
-          <div class="tab sub">
-            <button class="tablinks" onclick="openCity(event, 'refri', 'two')">Refri</button>
-            <button class="tablinks" onclick="openCity(event, 'sucos', 'two')">Sucos</button>
-            <button class="tablinks" onclick="openCity(event, 'alcool', 'two')">Alcoólicos</button>
-          </div>
-          <div id="refri" class="tabcontent">
-              <h3>Refri</h3> 
-              <p>Paris is the capital of France.</p> 
-          </div>
-          <div id="sucos" class="tabcontent">
-              <h3>Sucos</h3> 
-              <p>Paris is the capital of France.</p> 
-          </div>
-          <div id="alcool" class="tabcontent">
-              <h3>Alcoólicos</h3> 
-              <p>Paris is the capital of France.</p> 
-          </div>
-        
-        
-          
-        </div>
-
-    </div>
-
-    
+    <div id="categories" class="categories"> </div>
+   
     
  <script src="assets/js/all.js"></script>
  <script src="assets/components/categorias/categorias.js"></script>
+ <script src="assets/components/api/api-categorias.js"></script>
 
 </body>
 </html>
