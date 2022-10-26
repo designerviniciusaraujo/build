@@ -169,12 +169,32 @@ data = [{
             name:'Bebidas', 
             products:[{
                 id:'001',
-                name:'peixe', 
-                price:75, 
+                name:'Água com Gás', 
+                price:5, 
             },{
                 id:'002',
-                name:'lula', 
-                price:75, 
+                name:'Água sem Gás', 
+                price:4, 
+            },{
+                id:'003',
+                name:'H20 Limão', 
+                price:7, 
+            },{
+                id:'005',
+                name:'Refrigerante lata', 
+                price:6, 
+            },{
+                id:'002',
+                name:'Refrigerante Zero lata ', 
+                price:7, 
+            },{
+                id:'007',
+                name:'Sweppes', 
+                price:7, 
+            },{
+                id:'009',
+                name:'Copo com Gelo', 
+                price:3, 
             }]
             
         },{ 
