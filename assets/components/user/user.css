@@ -1,8 +1,10 @@
 .user {
   
-    font-family: 'Lexend Deca', sans-serif;
-    color: #8B9398;
-    padding: 10px 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #8B9398;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 300;
 }
 .user span {
     font-weight: 300;
@@ -93,4 +95,5 @@ select {
     border-radius: .25em;
      
   }
+  
   

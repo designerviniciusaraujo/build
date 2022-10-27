@@ -13,7 +13,9 @@ function validation(event){
      userView.innerHTML= ` 
                
       
-     <div> 
+     <div style="
+     padding: 0 15px;
+ "> 
         <i class="fa-regular fa-user"></i>
         Olá <strong>`+inputUserName +`</strong> Seja Bem-vindo!
     </div>

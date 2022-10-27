@@ -14,8 +14,10 @@ function openCity(evt, cityName, parent) {
     }
     document.getElementById(cityName).style.display = "block";
     if (parent){
-      console.log(parent)
+     
     document.getElementById(parent).style.display = "block";
+    console.log(document.getElementById(parent).parentNode)
+
     }
 
       evt.currentTarget.className +=" active";

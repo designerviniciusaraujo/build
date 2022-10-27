@@ -2,6 +2,7 @@ data = [{
     id:'0',
     name:'Para Comer', 
     key:'Comer', 
+    image:' <i class="fa-solid fa-burger"></i>',
         itens:[{ 
             id:'01',
             name:'Porções', 
@@ -163,36 +164,44 @@ data = [{
     id:'1',
     name:'Para Beber', 
     key:'Beber',
+    image:'<i class="fa-solid fa-martini-glass"></i>',
 
         itens:[{ 
             id:'04',
             name:'Bebidas', 
             products:[{
                 id:'001',
+                key:'',
                 name:'Água com Gás', 
                 price:5, 
             },{
                 id:'002',
+                key:'',
                 name:'Água sem Gás', 
                 price:4, 
             },{
                 id:'003',
+                key:'',
                 name:'H20 Limão', 
                 price:7, 
             },{
                 id:'005',
+                key:'',
                 name:'Refrigerante lata', 
                 price:6, 
             },{
                 id:'002',
+                key:'',
                 name:'Refrigerante Zero lata ', 
                 price:7, 
             },{
                 id:'007',
+                key:'',
                 name:'Sweppes', 
                 price:7, 
             },{
                 id:'009',
+                key:'',
                 name:'Copo com Gelo', 
                 price:3, 
             }]
@@ -298,7 +307,7 @@ var categoriesContainer=document.getElementById('categories')
         container.childNodes[1].innerHTML += ` 
 
             <button class="tablinks" onclick="openCity(event, '`+apiData.id +`')">
-                <i class="fa-solid fa-burger"></i> `+apiData.name +`
+                `+apiData.image +``+apiData.name +`
             </button>
           
         `;
@@ -342,7 +351,7 @@ var categoriesContainer=document.getElementById('categories')
                                 <span class="valor">`+productsMap.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+`</span>
                             </div>
                             <div class="quantidade">
-                                <button>+</button>
+                                <button key="`+productsMap.key +`" onclick="addProd(this)">+</button>
                                 <input type="text" placeholder="0">
                                 <button>-</button>
                             </div>
@@ -363,7 +372,16 @@ var categoriesContainer=document.getElementById('categories')
   
  categoriesContainer ? getApi(categoriesContainer) : console.log("..");
     
+ addProd=(Prod)=>{
 
+    console.log(Prod)
+   
+    // let key=prodThis.getAttribute('key')
+    // listProd[key].quantidade++ 
+    // Cart(true) 
+
+    
+  }
 
 
     

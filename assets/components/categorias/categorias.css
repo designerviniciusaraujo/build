@@ -48,7 +48,12 @@ background-color: #ddd;
   font-weight: 500;
 
 }
-
+.tab.sub button.active {
+  background-color: transparent;
+  border-bottom: 1px solid #F1B602;
+  color: #F1B602;
+  font-weight: 500;
+}
 /* Style the tab content */
 .tabcontent {
 display: none;
