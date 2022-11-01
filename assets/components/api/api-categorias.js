@@ -10,76 +10,105 @@ data = [{
                 id:'150',
                 name:'Porção Camarão Paulista', 
                 price:90, 
+                quantidade:0,
             },{
                 id:'151',
                 name:'Porção Camarão Dorê', 
                 price:75, 
+                quantidade:0,
+
 
                 
             },{
                 id:'152',
                 name:'Porção Lula Dorê', 
-                price:80, 
+                price:80,
+                quantidade:0,
+
 
             },{
                 id:'153',
                 name:'Porção Peixe Tilápia', 
-                price:65, 
+                price:65,
+                quantidade:0,
+
 
             },{
                 id:'154',
                 name:'Porção Peixe Cação', 
-                price:65, 
+                price:65,
+                quantidade:0,
+
 
             },{
                 id:'155',
                 name:'Porção Peixe Pescada', 
-                price:65, 
+                price:65,
+                quantidade:0,
+
 
             },{
                 id:'156',
                 name:'Porção Peixe Merluza', 
-                price:65, 
+                price:65,
+                quantidade:0,
+
 
             },{
                 id:'158',
                 name:'Porção Peixe Porquinho', 
-                price:65, 
+                price:65,
+                quantidade:0,
+
 
             },{
                 id:'159',
                 name:'Fritas', 
-                price:35, 
+                price:35,
+                quantidade:0,
+
 
             },{
                 id:'160',
                 name:'Fritas com Queijo', 
-                price:40, 
+                price:40,
+                quantidade:0,
+
 
             },{
                 id:'161',
                 name:'Porção Mandioca', 
-                price:35, 
+                price:35,
+                quantidade:0,
+
 
             },{
                 id:'162',
                 name:'Porção Mandioca com Queijo', 
-                price:40, 
+                price:40,
+                quantidade:0,
+
 
             },{
                 id:'164',
                 name:'Porção Calabresa', 
-                price:50, 
+                price:50,
+                quantidade:0,
+
 
             },{
                 id:'171',
                 name:'Molho Extra', 
                 price:3, 
+                quantidade:0,
+
 
             },{
                 id:'172',
                 name:'Pão Extra', 
                 price:3, 
+                quantidade:0,
+
 
             }
         ]
@@ -89,19 +118,23 @@ data = [{
             products:[{
                 id:'112',
                 name:'Hot Dog', 
-                price:18, 
+                price:18,
+                quantidade:0, 
             },{
                 id:'097',
                 name:'X Salada', 
-                price:25, 
+                price:25,
+                quantidade:0, 
             },{
                 id:'110',
                 name:'X Egg', 
-                price:25, 
+                price:25,
+                quantidade:0, 
             },{
                 id:'111',
                 name:'X Burguer', 
-                price:25, 
+                price:25,
+                quantidade:0, 
             }
         ]
         },{ 
@@ -111,50 +144,62 @@ data = [{
                 id:'090',
                 name:'Pastel Carne ', 
                 price:13,
+                quantidade:0,
             },{
                 id:'091',
                 name:'Pastel Queijo', 
                 price:12,
+                quantidade:0,
             },{
                 id:'092',
                 name:'Pastel Bauru', 
                 price:12,
+                quantidade:0,
             },{
                 id:'093',
                 name:'Pastel Calabresa', 
                 price:12,
+                quantidade:0,
             },{
                 id:'094',
                 name:'Pastel Frango', 
                 price:12,
+                quantidade:0,
             },{
                 id:'095',
                 name:'Pastel Pizza', 
                 price:12,
+                quantidade:0,
             },{
                 id:'096',
                 name:'Pastel Brócolis', 
                 price:12,
+                quantidade:0,
             },{
                 id:'098',
                 name:'Pastel Carne com Queijo', 
                 price:15,
+                quantidade:0,
             },{
                 id:'014',
                 name:'Pastel Brócolis com Queijo', 
                 price:12,
+                quantidade:0,
             },{
                 id:'100',
                 name:'Frango com Catupiry', 
                 price:14,
+                quantidade:0,
             },{
                 id:'101',
                 name:'Pastel Palmito', 
                 price:13,
+                quantidade:0,
             },{
                 id:'101',
                 name:'Pastel Camarão', 
                 price:16,
+                quantidade:0,
             }
         ]
         }
@@ -173,37 +218,44 @@ data = [{
                 id:'001',
                 key:'',
                 name:'Água com Gás', 
-                price:5, 
+                price:5,
+                quantidade:0, 
             },{
                 id:'002',
                 key:'',
                 name:'Água sem Gás', 
-                price:4, 
+                price:4,
+                quantidade:0, 
             },{
                 id:'003',
                 key:'',
                 name:'H20 Limão', 
-                price:7, 
+                price:7,
+                quantidade:0, 
             },{
                 id:'005',
                 key:'',
                 name:'Refrigerante lata', 
-                price:6, 
+                price:6,
+                quantidade:0, 
             },{
                 id:'002',
                 key:'',
                 name:'Refrigerante Zero lata ', 
-                price:7, 
+                price:7,
+                quantidade:0, 
             },{
                 id:'007',
                 key:'',
                 name:'Sweppes', 
-                price:7, 
+                price:7,
+                quantidade:0, 
             },{
                 id:'009',
                 key:'',
                 name:'Copo com Gelo', 
-                price:3, 
+                price:3,
+                quantidade:0, 
             }]
             
         },{ 
@@ -213,65 +265,78 @@ data = [{
                 id:'130',
                 name:'Cerveja Pilsen Lata', 
                 price:6, 
+                quantidade:0,
             },{
                 id:'131',
                 name:'Cerveja Malte Lata', 
                 price:7, 
+                quantidade:0,
 
             },{
                 id:'132',
                 name:'Cerveja Haineken Lata', 
-                price:10, 
+                price:10,
+                quantidade:0, 
 
             },{
                 id:'133',
                 name:'Cerveja Haineken Long Neck', 
-                price:12, 
+                price:12,
+                quantidade:0, 
 
             },{
                 id:'134',
                 name:'Cerveja Stella Long Neck', 
-                price:10, 
+                price:10,
+                quantidade:0, 
 
             },{
                 id:'135',
                 name:'Cerveja Haineken sem alcool Long Neck ', 
-                price:10, 
+                price:10,
+                quantidade:0, 
 
             },{
                 id:'136',
                 name:'Cerveja Haineken sem alcool Lata', 
-                price:10, 
+                price:10,
+                quantidade:0, 
 
             },{
                 id:'140',
                 name:'Caipirinha Pinga', 
-                price:20, 
+                price:20,
+                quantidade:0, 
 
             },{
                 id:'141',
                 name:'Caipirinha Vodka Orloff', 
-                price:23, 
+                price:23,
+                quantidade:0, 
 
             },{
                 id:'142',
                 name:'Caipirinha Vodka Smirnoff', 
-                price:10, 
+                price:10,
+                quantidade:0, 
 
             },{
                 id:'143',
                 name:'Caipirinha Rum', 
-                price:25, 
+                price:25,
+                quantidade:0, 
 
             },{
                 id:'145',
                 name:'Caipirinha Cachaça artesanal', 
-                price:23, 
+                price:23,
+                quantidade:0, 
 
             },{
                 id:'142',
                 name:'Caipirinha Vodka Smirnoff', 
-                price:10, 
+                price:10,
+                quantidade:0, 
 
             }]
         },{ 
@@ -280,12 +345,14 @@ data = [{
             products:[{
                 id:'001',
                 name:'limao', 
-                price:75, 
+                price:75,
+                quantidade:0, 
 
             },{
                 id:'002',
                 name:'lula', 
-                price:75, 
+                price:75,
+                quantidade:0, 
 
             }]
         }
@@ -342,7 +409,7 @@ var categoriesContainer=document.getElementById('categories')
             `;
             var Contentsubs=document.getElementById(tabContentMap.id)
            
-            tabContentMap.products.map((productsMap)=>{  
+          innitProd=  tabContentMap.products.map((productsMap)=>{  
                     Contentsubs.innerHTML+= `  
                         <div class="produto">
                                 <img src="assets/images/camarao-paulista.png" alt="" s></img>
@@ -351,9 +418,9 @@ var categoriesContainer=document.getElementById('categories')
                                 <span class="valor">`+productsMap.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+`</span>
                             </div>
                             <div class="quantidade">
-                                <button key="`+productsMap.key +`" onclick="addProd(this)">+</button>
-                                <input type="text" placeholder="0">
-                                <button>-</button>
+                                <button key="`+productsMap.id +`" onclick="addProd(this)">+</button>
+                                <input  value="`+productsMap.quantidade +`" type="text" placeholder="0">
+                                <button key="`+productsMap.id +`">-</button>
                             </div>
                         </div> 
                         </div>
@@ -361,7 +428,7 @@ var categoriesContainer=document.getElementById('categories')
 
 
                 if(productsMap.price==undefined){
-                    console.log(productsMap )
+                  
 
                 }
    
@@ -371,17 +438,97 @@ var categoriesContainer=document.getElementById('categories')
  }
   
  categoriesContainer ? getApi(categoriesContainer) : console.log("..");
-    
- addProd=(Prod)=>{
 
-    console.log(Prod)
-   
-    // let key=prodThis.getAttribute('key')
-    // listProd[key].quantidade++ 
-    // Cart(true) 
+
+
+
+    
+ addProd=(ProdThis)=>{ 
+
+    var key=ProdThis.getAttribute('key')
+ 
+    data.map((apiData)=>{   
+        apiData.itens.map((itensMap)=>{     
+             itensMap.products.map((productsMap)=>{ 
+              productsMap.id===key ?  productsMap.quantidade++ : a=1
+             }) 
+        }) 
+
+     }) 
+
+    
+     refrashCart()
 
     
   }
 
+     
+ refrashCart=()=>{ 
+
+  var cartContainer = document.getElementById('cart')
+  var cartPreview = document.getElementById('cartPreview')
+   
+  cartContainer.innerHTML= `<div></div>`;  
+  cartPreview.innerHTML= `<div></div>`;  
+  cartQtd=0
+  totalCart=0
+    data.map((apiData)=>{   
+        apiData.itens.map((itensMap)=>{     
+             itensMap.products.map((productsMap)=>{ 
+              
+                cartQtd+=productsMap.quantidade
+
+              if(productsMap.quantidade>=1){
+               
+              
+                prodMultiply=productsMap.price*productsMap.quantidade
+                totalCart+=prodMultiply
+                
+                console.log(totalCart)
+
+         
+                cartPreview.innerHTML= `    <div >     <button id="cartPreview" onclick="showCart()"><i class="fa-solid fa-cart-shopping"></i></button> <span class="qtdIcon">`+cartQtd +` </span>   </div>  `;  
+                cartContainer.innerHTML+= `  
+                <div >
+                    
+                         `+productsMap.name +` 
+                         `+productsMap.quantidade +` 
+                         `+prodMultiply.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
+                          
+
+                </div> 
+                
+                `;  
+
+              
+             
+             }
+            
+             
+             }) 
+
+            
+        }) 
+
+     }) 
+     cartContainer.innerHTML+= ` 
+
+     <div class="controls"  > 
+     <button onclick="showCart()"><i class="fa-solid fa-chevron-left"></i></button>
+     <button onclick="showCart()"><i class="fa-solid fa-xmark"></i></button>
+
+
+    </div> 
+             <div class="total">
+                    
+             Total da compra
+             `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
+              
+
+            </div> 
+            `; 
+  }
 
     
+   
+         

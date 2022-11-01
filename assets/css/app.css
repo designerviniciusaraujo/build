@@ -19,3 +19,15 @@ h2 {
     width: 200px;
     color: #F0B503;
 }
+.controls {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.controls button {
+    /* background: red; */
+    margin: 20px 10px;
+    color: #f39c12;
+}

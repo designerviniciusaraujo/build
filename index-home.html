@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/app.css">  
     <link rel="stylesheet" href="assets/css/validation.css">  
     <link rel="stylesheet" href="assets/css/inputs.css">  
+    <link rel="stylesheet" href="assets/css/cart.css">  
     <link rel="stylesheet" href="assets/components/user/user.css">  
     <link rel="stylesheet" href="assets/components/menu/menu.css">  
     <link rel="stylesheet" href="assets/components/search/search.css">  
@@ -44,19 +45,21 @@
                     <option value="3">MESA</option>
                 </select>
             </div>
-                
-        
+                      
             <button onclick="validation(event)">Cárdapio</button>
         </form>     
     </div>
-    <div class="user" id="user">  </div>
+    <div class="user" id="user"> 
+        
+    </div>
+    <div class="cart" id="cart">  </div>
 
 
     <div class="menu">
         <ul>
           
             <button><i class="fa-regular fa-user"></i></button> 
-             <button><i class="fa-solid fa-cart-shopping"></i></button>
+             <button id="cartPreview"><i class="fa-solid fa-cart-shopping"></i></button>
             <button><i class="fa-solid fa-bars"></i></button>
         </ul>
     </div>
@@ -81,8 +84,8 @@
  <script src="assets/components/categorias/categorias.js"></script>
  <script src="assets/components/api/api-categorias.js"></script>
  <script src="assets/js/validation.js"></script>
-    <script>
+ <script src="assets/js/cart.js"></script>
+
     
-    </script>
 </body>
 </html>
