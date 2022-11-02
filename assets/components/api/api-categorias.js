@@ -121,7 +121,7 @@ data = [{
                 price:18,
                 quantidade:0, 
             },{
-                id:'097',
+                id:'97',
                 name:'X Salada', 
                 price:25,
                 quantidade:0, 
@@ -366,7 +366,6 @@ var apiContainer=document.getElementById('api')
 var categoriesContainer=document.getElementById('categories') 
 
 
-
  getApi=(container)=>{
     container.innerHTML =` <div class="tab"> </div>`;
     data.map((apiData)=>{ 
@@ -441,25 +440,33 @@ var categoriesContainer=document.getElementById('categories')
  categoriesContainer ? getApi(categoriesContainer) : console.log("..");
 
 
+ var value = 0
 
  removeProd=(ProdThis, inputProd)=>{ 
-console.log("removeProd")
+ 
     var key=ProdThis.getAttribute('key')
-      inputGet=document.getElementById(inputProd)
-      value=0
+    inputGet=document.getElementById(inputProd)
+     
 
  
     data.map((apiData)=>{   
         apiData.itens.map((itensMap)=>{     
              itensMap.products.map((productsMap)=>{ 
-              productsMap.id===key ?  productsMap.quantidade-- : a=1
+              
+
+              if(productsMap.id===key && productsMap.quantidade>0){
+                productsMap.quantidade-- 
+                value=productsMap.quantidade 
+                input.setAttribute('value',value)
+
+              }
              }) 
         }) 
 
      }) 
 
     
-     refrashCart()
+     refrashCart(inputProd)
 
     
   }
@@ -468,49 +475,56 @@ console.log("removeProd")
  addProd=(ProdThis, inputProd)=>{ 
 
     var key=ProdThis.getAttribute('key')
-      inputGet=document.getElementById(inputProd)
-      value=0
+     
+      input=document.getElementById(inputProd)
+      
 
  
     data.map((apiData)=>{   
         apiData.itens.map((itensMap)=>{     
              itensMap.products.map((productsMap)=>{ 
-              productsMap.id===key ?  productsMap.quantidade++ : a=1
+        
+              if(productsMap.id===key ){
+                console.log(input)
+                productsMap.quantidade++
+                value=productsMap.quantidade 
+                input.setAttribute('value',value)
+              }
              }) 
         }) 
 
      }) 
 
     
-     refrashCart()
+     refrashCart(inputProd)
 
     
   }
 
      
- refrashCart=()=>{ 
+ refrashCart=(inputProd)=>{ 
+    input=document.getElementById(inputProd)
 
   var cartContainer = document.getElementById('cart')
   var cartPreview = document.getElementById('cartPreview')
-   
+  input =document.getElementById(inputProd)
   cartContainer.innerHTML= `<div></div>`;  
   cartPreview.innerHTML= `<div></div>`;  
   cartQtd=0
   totalCart=0
+  
     data.map((apiData)=>{   
         apiData.itens.map((itensMap)=>{     
              itensMap.products.map((productsMap)=>{ 
               
-                cartQtd+=productsMap.quantidade
 
-              if(productsMap.quantidade>=1){
+              if(productsMap.quantidade>0){
+                cartQtd+=productsMap.quantidade
                
-                value=productsMap.quantidade
+                
                 prodMultiply=productsMap.price*productsMap.quantidade
                 totalCart+=prodMultiply
-                
-                
-
+               
          
                 cartPreview.innerHTML= `    <div >     <button id="cartPreview" onclick="showCart()"><i class="fa-solid fa-cart-shopping"></i></button> <span class="qtdIcon">`+cartQtd +` </span>   </div>  `;  
                 cartContainer.innerHTML+= `  
@@ -536,22 +550,17 @@ console.log("removeProd")
         }) 
 
      }) 
-    inputGet.setAttribute('value',value )
 
      cartContainer.innerHTML+= ` 
 
-     <div class="controls"  > 
-     <button onclick="showCart()"><i class="fa-solid fa-chevron-left"></i></button>
-     <button onclick="showCart()"><i class="fa-solid fa-xmark"></i></button>
-
-
-    </div> 
-             <div class="total">
-                    
-             Total da compra
-             `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
-              <button>Enviar Pedido agora </button>
-
+            <div class="controls"  > 
+                <button onclick="showCart()"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="showCart()"><i class="fa-solid fa-xmark"></i></button>  
+            </div> 
+             <div class="total"> 
+                Total da compra
+                `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
+                <button>Enviar Pedido agora </button> 
             </div> 
             `; 
   }

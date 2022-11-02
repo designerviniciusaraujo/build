@@ -1,7 +1,5 @@
 cartContainer=document.getElementById('cart')
-
-console.log(cartContainer)
-
+ 
 cartContainer.innerHTML= `    
 
             <div class="controls" > 

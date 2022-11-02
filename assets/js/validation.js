@@ -8,7 +8,7 @@ function validation(event){
    
      var text = select.options[select.selectedIndex].text;
      
-console.log(event)
+ 
   
      userView.innerHTML= ` 
                

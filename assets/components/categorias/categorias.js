@@ -16,8 +16,7 @@ function openCity(evt, cityName, parent) {
     if (parent){
      
     document.getElementById(parent).style.display = "block";
-    console.log(document.getElementById(parent).parentNode)
-
+    
     }
 
       evt.currentTarget.className +=" active";
