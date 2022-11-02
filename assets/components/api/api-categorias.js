@@ -445,8 +445,9 @@ var categoriesContainer=document.getElementById('categories')
  removeProd=(ProdThis, inputProd)=>{ 
  
     var key=ProdThis.getAttribute('key')
-    inputGet=document.getElementById(inputProd)
+    input=document.getElementById(inputProd)
      
+    console.log(inputProd)
 
  
     data.map((apiData)=>{   
