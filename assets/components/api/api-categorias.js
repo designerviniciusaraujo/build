@@ -10,11 +10,13 @@ data = [{
                 id:'150',
                 name:'Porção Camarão Paulista', 
                 price:90, 
+                img:'assets/images/produtos/camaraopaulista.png',
                 quantidade:0,
             },{
                 id:'151',
                 name:'Porção Camarão Dorê', 
                 price:75, 
+                img:'assets/images/produtos/camaraodore.png',
                 quantidade:0,
 
 
@@ -23,12 +25,15 @@ data = [{
                 id:'152',
                 name:'Porção Lula Dorê', 
                 price:80,
+                img:'assets/images/produtos/luladore.png',
                 quantidade:0,
 
 
             },{
                 id:'153',
                 name:'Porção Peixe Tilápia', 
+                img:'assets/images/produtos/tilapia.png',
+
                 price:65,
                 quantidade:0,
 
@@ -36,6 +41,8 @@ data = [{
             },{
                 id:'154',
                 name:'Porção Peixe Cação', 
+                img:'assets/images/produtos/cacao.png',
+
                 price:65,
                 quantidade:0,
 
@@ -43,6 +50,7 @@ data = [{
             },{
                 id:'155',
                 name:'Porção Peixe Pescada', 
+                img:'assets/images/produtos/pescada.png', 
                 price:65,
                 quantidade:0,
 
@@ -50,6 +58,7 @@ data = [{
             },{
                 id:'156',
                 name:'Porção Peixe Merluza', 
+                img:'assets/images/produtos/merluza.png', 
                 price:65,
                 quantidade:0,
 
@@ -57,6 +66,7 @@ data = [{
             },{
                 id:'158',
                 name:'Porção Peixe Porquinho', 
+                img:'assets/images/produtos/porquinho.png', 
                 price:65,
                 quantidade:0,
 
@@ -64,6 +74,8 @@ data = [{
             },{
                 id:'159',
                 name:'Fritas', 
+                img:'assets/images/produtos/fritas.png', 
+
                 price:35,
                 quantidade:0,
 
@@ -71,6 +83,8 @@ data = [{
             },{
                 id:'160',
                 name:'Fritas com Queijo', 
+                img:'assets/images/produtos/fritasqueijo.png', 
+
                 price:40,
                 quantidade:0,
 
@@ -78,6 +92,8 @@ data = [{
             },{
                 id:'161',
                 name:'Porção Mandioca', 
+                img:'assets/images/produtos/mandioca.png', 
+
                 price:35,
                 quantidade:0,
 
@@ -85,6 +101,8 @@ data = [{
             },{
                 id:'162',
                 name:'Porção Mandioca com Queijo', 
+                img:'assets/images/produtos/mandiocaqueijo.png', 
+
                 price:40,
                 quantidade:0,
 
@@ -92,6 +110,8 @@ data = [{
             },{
                 id:'164',
                 name:'Porção Calabresa', 
+                img:'assets/images/produtos/calabresa.png', 
+
                 price:50,
                 quantidade:0,
 
@@ -99,6 +119,8 @@ data = [{
             },{
                 id:'171',
                 name:'Molho Extra', 
+                img:'assets/images/produtos/molhoextra.png', 
+
                 price:3, 
                 quantidade:0,
 
@@ -106,6 +128,8 @@ data = [{
             },{
                 id:'172',
                 name:'Pão Extra', 
+                img:'assets/images/produtos/paoextra.png', 
+
                 price:3, 
                 quantidade:0,
 
@@ -411,7 +435,7 @@ var categoriesContainer=document.getElementById('categories')
           innitProd=  tabContentMap.products.map((productsMap)=>{  
                     Contentsubs.innerHTML+= `  
                         <div class="produto">
-                                <img src="assets/images/camarao-paulista.png" alt="" s></img>
+                                <img src="`+productsMap.img +`" alt="" s></img>
                             <div class="prod-val">
                                 <h3 class="title-prod">`+productsMap.name +`</h3> 
                                 <span class="valor">`+productsMap.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+`</span>
